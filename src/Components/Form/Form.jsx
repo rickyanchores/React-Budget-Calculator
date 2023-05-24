@@ -21,12 +21,14 @@ const Form = ({ salary, setSalary, extraSalary, setExtraSalary }) => {
   return (
     <div className="Form">
       <h3>Monthly Income</h3>
+      <p>monthly salary:</p>
       <input
         value={salary}
         type="text"
         placeholder="Monthly Salary"
         onChange={inputSalary}
       />
+      <p>extra income:</p>
       <input
         value={extraSalary}
         type="text"

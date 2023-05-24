@@ -39,6 +39,7 @@ button {
   padding: 1em 2em;
   font-weight: bolder;
   color: whitesmoke;
+  margin-top: 1em;
 }
 button:hover {
   background: coral;
