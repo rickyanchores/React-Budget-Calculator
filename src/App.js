@@ -6,8 +6,7 @@ import "./styles.css";
 export default function App() {
   const [salary, setSalary] = useState("");
   const [extraSalary, setExtraSalary] = useState("");
-
-  const totSalary = Number(salary) + Number(extraSalary);
+  const [totSalary,setTotSalary] = useState("")
 
   return (
     <div className="App">
@@ -19,12 +18,14 @@ export default function App() {
           extraSalary={extraSalary}
           setExtraSalary={setExtraSalary}
           totSalary={totSalary}
+          setTotSalary={setTotSalary}
         />
         <Form
           salary={salary}
           setSalary={setSalary}
           extraSalary={extraSalary}
           setExtraSalary={setExtraSalary}
+          setTotSalary={setTotSalary}
         />
       </div>
       <p>Developed by Ricky A</p>
