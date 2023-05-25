@@ -6,8 +6,8 @@ import "./styles.css";
 export default function App() {
   const [salary, setSalary] = useState("");
   const [extraSalary, setExtraSalary] = useState("");
-
-  const totSalary = Number(salary) + Number(extraSalary);
+  const [totSalary, setTotSalary] = useState();
+  //const totSalary = Number(salary) + Number(extraSalary);
 
   return (
     <div className="App">
@@ -25,6 +25,8 @@ export default function App() {
           setSalary={setSalary}
           extraSalary={extraSalary}
           setExtraSalary={setExtraSalary}
+          totSalary={totSalary}
+          setTotSalary={setTotSalary}
         />
       </div>
       <p>Developed by Ricky A</p>

@@ -1,6 +1,12 @@
 import React from "react";
 
-const Form = ({ salary, setSalary, extraSalary, setExtraSalary }) => {
+const Form = ({
+  salary,
+  setSalary,
+  extraSalary,
+  setExtraSalary,
+  setTotSalary,
+}) => {
   //Events
   const inputSalary = (e) => {
     console.log(e.target.value);
@@ -16,6 +22,7 @@ const Form = ({ salary, setSalary, extraSalary, setExtraSalary }) => {
     console.log("click");
     setSalary("");
     setExtraSalary("");
+    setTotSalary(Number(salary) + Number(extraSalary));
   };
 
   return (
